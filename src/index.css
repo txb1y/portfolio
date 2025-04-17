@@ -77,10 +77,14 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
   }
 
   html {
     @apply scroll-smooth;
+    font-size: 16px;
   }
 }
 
