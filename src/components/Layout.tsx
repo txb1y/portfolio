@@ -30,7 +30,7 @@ export function Layout() {
       </main>
       <footer className="text-center py-4 text-xs text-muted-foreground px-4">
         <div className="max-w-7xl mx-auto">
-          <p>© {new Date().getFullYear()} Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Bharathi Portfolio. All rights reserved.</p>
         </div>
       </footer>
 

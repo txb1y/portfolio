@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { ThemeToggle } from "./ThemeToggle";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -10,14 +10,14 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
+  const handleScroll = useCallback(() => {
+    setIsScrolled(window.scrollY > 10);
+  }, []);
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [handleScroll]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -31,14 +31,14 @@ export function Navbar() {
     }
   };
 
-  const navLinks = [
+  const navLinks = useMemo(() => [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
     { name: "Skills", id: "skills" },
     { name: "Education", id: "education" },
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },
-  ];
+  ], []);
 
   return (
     <header

@@ -72,19 +72,19 @@
 @layer base {
   * {
     @apply border-border selection:bg-violet-400/20 selection:text-violet-400;
+    box-sizing: border-box;
   }
   
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   html {
     @apply scroll-smooth;
-    font-size: 16px;
+    overflow-x: hidden;
   }
 }
 
