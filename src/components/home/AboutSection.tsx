@@ -7,8 +7,8 @@ export const AboutSection = () => {
   const { name, about } = portfolioData;
   
   return (
-    <section id="about" className="py-6 scroll-mt-16">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-6">About Me</h2>
+    <section id="about" className="py-4 scroll-mt-16">
+      <h2 className="text-2xl md:text-3xl font-semibold mb-4">About Me</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="md:col-span-1 animate-fade-in flex justify-center md:justify-start">
@@ -22,7 +22,7 @@ export const AboutSection = () => {
           </Avatar>
         </div>
         
-        <div className="md:col-span-2 space-y-4 animate-fade-in animate-delay-100">
+        <div className="md:col-span-2 space-y-2 animate-fade-in animate-delay-100">
           <div className="glass p-4 rounded-lg">
             <div className="flex items-center mb-2">
               <Building className="mr-2 text-violet-400" />
