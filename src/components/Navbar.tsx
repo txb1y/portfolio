@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import { ThemeToggle } from "./ThemeToggle";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -74,7 +73,6 @@ export function Navbar() {
           <Link to="/projects" className="text-sm font-medium transition-colors hover:text-violet-400">
             All Projects
           </Link>
-          <ThemeToggle />
         </nav>
       </div>
       
@@ -98,7 +96,6 @@ export function Navbar() {
             >
               All Projects
             </Link>
-            <ThemeToggle />
           </nav>
         </div>
       )}

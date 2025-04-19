@@ -2,6 +2,7 @@
 import { portfolioData } from "@/data/portfolio";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { TypewriterText } from "./TypewriterText";
 
 export const HomeHero = () => {
   const { name, role, tagline, socialLinks } = portfolioData;
@@ -23,7 +24,15 @@ export const HomeHero = () => {
         </h1>
         
         <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-foreground/80 animate-fade-in animate-delay-200">
-          {role}
+          <TypewriterText 
+            phrases={[
+              "Frontend Dev",
+              "AI x UI/UX Enthusiast",
+              "Building Aesthetic Digital Experiences"
+            ]}
+            typingSpeed={70}
+            pauseDuration={2000}
+          />
         </h2>
         
         <p className="text-muted-foreground text-base md:text-lg max-w-2xl animate-fade-in animate-delay-300">

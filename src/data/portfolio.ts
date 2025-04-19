@@ -64,8 +64,8 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   name: "Bharathi B.",
-  role: "Frontend Developer",
-  tagline: "I build beautiful, responsive web experiences with modern technologies",
+  role: "Frontend Dev | AI x UI/UX Enthusiast | Building Aesthetic Digital Experiences",
+  tagline: "",
   socialLinks: [
     {
       name: "GitHub",
