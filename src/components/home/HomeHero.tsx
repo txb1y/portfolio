@@ -7,7 +7,7 @@ export const HomeHero = () => {
   const { name, role, tagline, socialLinks } = portfolioData;
   
   return (
-    <section id="home" className="min-h-[70vh] flex flex-col justify-center relative pt-16 md:pt-20">
+    <section id="home" className="min-h-[60vh] flex flex-col justify-center relative pt-16 md:pt-20 pb-8">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -left-64 w-96 h-96 bg-violet-600/20 rounded-full filter blur-3xl animate-float" />
         <div className="absolute bottom-1/4 -right-64 w-96 h-96 bg-violet-600/20 rounded-full filter blur-3xl animate-float animate-delay-300" />

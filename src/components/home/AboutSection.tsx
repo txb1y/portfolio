@@ -7,7 +7,7 @@ export const AboutSection = () => {
   const { name, about } = portfolioData;
   
   return (
-    <section id="about" className="py-10 scroll-mt-20">
+    <section id="about" className="py-6 scroll-mt-16">
       <h2 className="text-2xl md:text-3xl font-semibold mb-6">About Me</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
