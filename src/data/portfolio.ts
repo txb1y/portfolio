@@ -109,7 +109,6 @@ export const portfolioData: PortfolioData = {
       { name: "Leadership", color: "bg-purple-600" },
       { name: "Problem Solving", color: "bg-indigo-600" },
       { name: "Team Collaboration", color: "bg-pink-600" },
-      { name: "Time Management", color: "bg-rose-600" },
     ],
   },
   resume: {
