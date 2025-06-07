@@ -19,6 +19,8 @@ export interface Project {
   technologies: Technology[];
   demoUrl: string;
   linkedinUrl?: string; // Added LinkedIn URL for projects
+  telegramUrl?: string; // Added Telegram URL for projects
+  githubUrl?: string; // Added GitHub URL for projects
 }
 
 export interface AboutMe {
@@ -79,7 +81,7 @@ export const portfolioData: PortfolioData = {
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:bharathibalu101@gmail.com",
+      url: "mailto:bharathii54123@gmail.com",
     },
   ],
   about: {
@@ -115,7 +117,7 @@ export const portfolioData: PortfolioData = {
     description: "Download my resume to learn more about my experience, skills, and qualifications. Feel free to reach out if you have any questions!",
   },
   contact: {
-    email: "bharathibalu101@gmail.com",
+    email: "bharathii54123@gmail.com",
     message: "I'm always open to new opportunities and collaborations. Feel free to reach out via email, and I'll get back to you as soon as possible!",
   },
   projects: [
@@ -137,13 +139,15 @@ export const portfolioData: PortfolioData = {
       id: "telegram-email-bot",
       title: "Telegram Email Bot",
       description: "Send single or bulk emails directly from Telegram using simple chat commands.",
-      imageUrl: "", // Add an image if available
+      imageUrl: "",
       technologies: [
         { name: "Python", color: "bg-blue-800" },
         { name: "smtplib", color: "bg-gray-600" },
         { name: "Telegram Bot API", color: "bg-blue-400" }
       ],
-      demoUrl: "https://github.com/txb1y/MailBot-Telegram"
+      demoUrl: "https://github.com/txb1y/MailBot-Telegram",
+      telegramUrl: "https://t.me/Emailsender523_Bot",
+      githubUrl: "https://github.com/txb1y/MailBot-Telegram"
     }
   ]
 };

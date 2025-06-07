@@ -1,8 +1,8 @@
-
 import { Project } from "@/data/portfolio";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { Github } from "lucide-react";
 
 interface ProjectCardProps {
   project: Project;
@@ -53,6 +53,21 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
               </span>
             ))}
           </div>
+          {/* Social icons for Telegram Email Bot */}
+          {project.id === "telegram-email-bot" && (
+            <div className="flex gap-3 mt-6">
+              {project.githubUrl && (
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full glass transition-all hover:scale-110 hover:bg-violet-500/20" aria-label="GitHub">
+                  <Github className="w-5 h-5 text-foreground" />
+                </a>
+              )}
+              {project.telegramUrl && (
+                <a href={project.telegramUrl} target="_blank" rel="noopener noreferrer" className="p-2 rounded-full glass transition-all hover:scale-110 hover:bg-violet-500/20" aria-label="Telegram">
+                  <svg className="w-5 h-5 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M9.036 16.498l-.398 3.13c.57 0 .816-.244 1.115-.54l2.67-2.557 5.537 4.04c1.014.56 1.736.265 1.99-.94l3.61-16.84c.33-1.53-.553-2.13-1.54-1.76L2.36 9.47c-1.49.58-1.47 1.41-.254 1.78l4.6 1.44 10.68-6.74c.5-.32.96-.14.58.2l-8.66 7.82z" /></svg>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </a>
     </div>
