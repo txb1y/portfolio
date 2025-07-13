@@ -122,14 +122,6 @@
   .text-gradient {
     @apply bg-gradient-to-r from-violet-600 to-violet-400 bg-clip-text text-transparent;
   }
-
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
   
   .animate-delay-100 {
     animation-delay: 100ms;
@@ -187,54 +179,7 @@
     }
   }
 
-  @keyframes certificate-glow {
-    0% {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    }
-    50% {
-      box-shadow: 0 8px 25px rgba(155,135,245,0.3);
-    }
-    100% {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    }
-  }
-
-  @keyframes scroll-indicator {
-    0% {
-      opacity: 0.3;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 0.3;
-      transform: scale(1);
-    }
-  }
-
   .animate-float {
     animation: float 8s ease-in-out infinite;
-  }
-
-  .certificate-scroll {
-    scroll-behavior: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
-  }
-
-  .certificate-scroll::-webkit-scrollbar {
-    display: none;
-  }
-
-  .certificate-scroll {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
   }
 }
